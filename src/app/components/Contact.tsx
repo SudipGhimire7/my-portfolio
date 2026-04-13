@@ -9,8 +9,15 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+    
+    // Format the message for WhatsApp
+    const text = `Hi, my name is ${formData.name} (${formData.email}).\n\n${formData.message}`;
+    const encodedText = encodeURIComponent(text);
+    
+    // Replace with your actual WhatsApp phone number including country code (e.g., +977...)
+    const whatsappNumber = "+9779845919784"; 
+    
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodedText}`, '_blank');
   };
 
   const socialLinks = [
@@ -29,7 +36,7 @@ export function Contact() {
     {
       name: 'Email',
       icon: Mail,
-      url: 'mailto:sudip@example.com',
+      url: 'mailto:sudeepghimire356@gmail.com',
       color: 'hover:text-purple-400',
     },
   ];

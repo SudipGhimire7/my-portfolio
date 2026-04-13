@@ -7,28 +7,28 @@ export function Skills() {
 
   const skillCategories = [
     {
-      title: 'Frontend',
-      icon: Globe,
-      color: 'from-blue-500 to-cyan-500',
-      skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Redux', 'Framer Motion'],
-    },
-    {
-      title: 'Backend',
+      title: 'Languages',
       icon: Code2,
-      color: 'from-purple-500 to-pink-500',
-      skills: ['Node.js', 'Express', 'Python', 'Django', 'GraphQL', 'REST APIs'],
+      color: 'from-blue-500 to-cyan-500',
+      skills: ['JavaScript', 'TypeScript', 'PHP', 'HTML5', 'CSS3'],
     },
     {
-      title: 'Database',
+      title: 'Frameworks & Libraries',
+      icon: Globe,
+      color: 'from-purple-500 to-pink-500',
+      skills: ['React', 'Next.js', 'Tailwind CSS', 'Bootstrap 5', 'Framer Motion', 'Vite'],
+    },
+    {
+      title: 'Database & Backend',
       icon: Database,
       color: 'from-green-500 to-emerald-500',
-      skills: ['PostgreSQL', 'MongoDB', 'Redis', 'Prisma', 'Supabase', 'Firebase'],
+      skills: ['MySQL', 'PHP 7.4+', 'REST APIs', 'Chart.js'],
     },
     {
-      title: 'Tools',
+      title: 'Tools & Workflow',
       icon: Wrench,
       color: 'from-orange-500 to-red-500',
-      skills: ['Git', 'Docker', 'AWS', 'Vercel', 'Jest', 'CI/CD'],
+      skills: ['Git', 'GitHub', 'XAMPP', 'VS Code', 'npm / pnpm'],
     },
   ];
 

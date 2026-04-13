@@ -66,10 +66,14 @@ export function Hero() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
 
-            <button className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
+            <a
+              href="/resume.pdf"
+              download="Sudip_Ghimire_Resume.pdf"
+              className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 transition-all duration-300 flex items-center gap-2"
+            >
               <Download className="w-4 h-4" />
               Download Resume
-            </button>
+            </a>
           </motion.div>
         </motion.div>
 
@@ -87,8 +91,8 @@ export function Hero() {
             {/* Mountain image */}
             <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden border border-white/10">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1764140608148-80e010804af8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-                alt="Nepal Himalayan Mountains"
+                src="https://scontent.fktm9-2.fna.fbcdn.net/v/t39.30808-6/408921374_122096084138155404_6371827912572638651_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=7Gs3QJtTiWIQ7kNvwHxn0cg&_nc_oc=Adr2I9YMac33D9XBW00vhk70YMEcSZ2x47pJyoCr6eMk2_e_l8fL3vWRmoXnBtjmu1hdEdp6kCbu44qN5hvZO8VR&_nc_zt=23&_nc_ht=scontent.fktm9-2.fna&_nc_gid=_FnPXkFzasGxVmBW8d5zXg&_nc_ss=7a3a8&oh=00_Af3Wisp7PRK0ElZ2Xn2Y7VFJ_tsrWtMwGPtTp9FB-ttJxA&oe=69E161C5"
+                alt="Sudip Ghimire"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
@@ -110,7 +114,7 @@ export function Hero() {
               className="absolute -top-6 -right-6 px-6 py-4 bg-black/80 backdrop-blur-xl border border-white/10 rounded-2xl"
             >
               <div className="text-sm text-gray-400">Based in</div>
-              <div className="text-lg">Nepal 🇳🇵</div>
+              <div className="text-lg">Nepal</div>
             </motion.div>
           </div>
         </motion.div>

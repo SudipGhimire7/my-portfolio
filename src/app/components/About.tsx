@@ -6,24 +6,32 @@ export function About() {
 
   const timeline = [
     {
-      year: '2020',
-      title: 'Started Learning',
-      description: 'Began my journey into web development with HTML, CSS, and JavaScript',
+      year: 'May 2024',
+      title: 'Weather App',
+      description: 'Built a weather application using JavaScript that fetches live weather data from an API — my first real-world JS project. 🌦️',
+      lang: 'JavaScript',
+      link: 'https://github.com/SudipGhimire7/weather-app',
     },
     {
-      year: '2021',
-      title: 'First Project',
-      description: 'Built my first full-stack application using React and Node.js',
+      year: 'Dec 2025',
+      title: 'Farmer Grievance Portal',
+      description: 'Developed a PHP-based portal that allows farmers to submit grievances and track their resolution status online.',
+      lang: 'PHP',
+      link: 'https://github.com/SudipGhimire7/farmer-grievance-portal',
     },
     {
-      year: '2023',
-      title: 'Major Projects',
-      description: 'Delivered production-ready web applications for clients and open source',
+      year: 'Apr 2026',
+      title: 'Mandapgiri Nepal',
+      description: 'Crafted a modern travel & tourism landing page for a Nepal-based company using React, TypeScript, Tailwind CSS, and Framer Motion.',
+      lang: 'TypeScript',
+      link: 'https://github.com/SudipGhimire7/Mandapgiri-Nepal',
     },
     {
-      year: '2026',
-      title: 'Present',
-      description: 'Creating modern web experiences with cutting-edge technologies',
+      year: 'Apr 2026',
+      title: 'My Portfolio — Present',
+      description: 'Designed and built this personal portfolio with Next.js and TypeScript to showcase projects, skills, and my dev journey.',
+      lang: 'TypeScript',
+      link: 'https://github.com/SudipGhimire7/my-portfolio',
     },
   ];
 
@@ -68,16 +76,7 @@ export function About() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <div className="p-6 bg-gradient-to-br from-blue-500/10 to-transparent border border-blue-500/20 rounded-xl">
-                <div className="text-3xl mb-2">20+</div>
-                <div className="text-sm text-gray-400">Projects Completed</div>
-              </div>
-              <div className="p-6 bg-gradient-to-br from-purple-500/10 to-transparent border border-purple-500/20 rounded-xl">
-                <div className="text-3xl mb-2">5+</div>
-                <div className="text-sm text-gray-400">Years Experience</div>
-              </div>
-            </div>
+
           </motion.div>
 
           {/* Right: Timeline */}
@@ -102,13 +101,22 @@ export function About() {
                   {/* Timeline dot */}
                   <div className="absolute left-6 top-2 w-5 h-5 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 border-4 border-black" />
 
-                  <div className="p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 transition-all duration-300 group">
-                    <div className="text-sm text-blue-400 mb-1">{item.year}</div>
-                    <h4 className="text-xl mb-2 group-hover:text-blue-400 transition-colors">
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 hover:border-blue-500/40 transition-all duration-300 group"
+                  >
+                    <div className="flex items-center justify-between mb-1">
+                      <div className="text-sm text-blue-400">{item.year}</div>
+                      <span className="text-xs px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">{item.lang}</span>
+                    </div>
+                    <h4 className="text-xl mb-2 group-hover:text-blue-400 transition-colors flex items-center gap-2">
                       {item.title}
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
                     </h4>
                     <p className="text-gray-400 text-sm">{item.description}</p>
-                  </div>
+                  </a>
                 </motion.div>
               ))}
             </div>

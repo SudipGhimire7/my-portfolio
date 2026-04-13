@@ -8,31 +8,41 @@ export function Projects() {
 
   const projects = [
     {
-      title: 'Everest Dashboard',
-      destination: 'Mount Everest',
-      description: 'Real-time analytics platform with interactive data visualization and reporting',
+      title: 'Mandapgiri Nepal',
+      destination: 'TypeScript',
+      description: 'Travel and tourism website for a Nepal-based tour company built with React, TypeScript, Tailwind CSS, and Framer Motion.',
       image: 'https://images.unsplash.com/photo-1762968117381-3e37cf5bcff2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-      tags: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
-      liveUrl: '#',
-      githubUrl: '#',
+      tags: ['React', 'TypeScript', 'Tailwind', 'Framer Motion'],
+      liveUrl: 'https://github.com/SudipGhimire7/Mandapgiri-Nepal',
+      githubUrl: 'https://github.com/SudipGhimire7/Mandapgiri-Nepal',
     },
     {
-      title: 'Pokhara Commerce',
-      destination: 'Pokhara Valley',
-      description: 'Modern e-commerce platform with seamless payment integration and inventory management',
-      image: 'https://images.unsplash.com/photo-1673505413397-0cd0dc4f5854?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-      tags: ['Next.js', 'Stripe', 'MongoDB', 'Tailwind'],
-      liveUrl: '#',
-      githubUrl: '#',
+      title: 'Personal Portfolio',
+      destination: 'TypeScript',
+      description: 'My personal portfolio website to showcase my projects and skills, featuring a modern dynamic UI.',
+      image: '/portfolio-screenshot.png',
+      tags: ['React', 'TypeScript', 'Tailwind'],
+      liveUrl: 'https://github.com/SudipGhimire7/my-portfolio',
+      githubUrl: 'https://github.com/SudipGhimire7/my-portfolio',
     },
     {
-      title: 'Annapurna Social',
-      destination: 'Annapurna Circuit',
-      description: 'Social networking app connecting adventure enthusiasts with real-time messaging',
-      image: 'https://images.unsplash.com/photo-1763809677397-22854c11a7bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
-      tags: ['React Native', 'Firebase', 'Express', 'Socket.io'],
-      liveUrl: '#',
-      githubUrl: '#',
+      title: 'Farmer Grievance Portal',
+      destination: 'PHP',
+      description: 'A portal designed to help farmers voice their grievances and address community issues efficiently.',
+      image: 'https://i.pinimg.com/736x/ae/b2/24/aeb2241ce346effb26f2608f65fda82b.jpg',
+      tags: ['PHP', 'MySQL', 'Web'],
+      liveUrl: 'https://github.com/SudipGhimire7/farmer-grievance-portal',
+      githubUrl: 'https://github.com/SudipGhimire7/farmer-grievance-portal',
+    },
+
+    {
+      title: 'Weather App',
+      destination: 'JavaScript',
+      description: 'Real-time weather application providing accurate forecasts and environmental conditions.',
+      image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080',
+      tags: ['JavaScript', 'API', 'HTML/CSS'],
+      liveUrl: 'https://github.com/SudipGhimire7/weather-app',
+      githubUrl: 'https://github.com/SudipGhimire7/weather-app',
     },
   ];
 
@@ -49,7 +59,7 @@ export function Projects() {
         >
           <h2 className="text-5xl mb-4">
             <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              Featured Destinations
+              Projects
             </span>
           </h2>
           <p className="text-gray-400 text-lg">Projects worth exploring</p>
